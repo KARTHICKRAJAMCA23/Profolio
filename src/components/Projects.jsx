@@ -1,7 +1,7 @@
 import React from "react";
 
 const projects = [
-  // MERN Projects
+  // MERN / Professional Projects
   {
     title: "Project Management App",
     desc: "Team leaders can manage projects, employees can track updates and receive feedback.",
@@ -48,7 +48,7 @@ const projects = [
     duration: "Sep 2024 - Oct 2024"
   },
 
-  // Animation / Fun Projects
+  // Fun / Animation Projects
   { title: "Ball Movement", desc: "Balls move along edges.", github:"https://github.com/KARTHICKRAJAMCA23/Ball", demo:"https://karthickrajamca23.github.io/Ball/", img:"/images/Ball.gif" },
   { title: "Random Ball", desc:"Balls move randomly.", github:"https://github.com/KARTHICKRAJAMCA23/Random-Ball", demo:"https://karthickrajamca23.github.io/Random-Ball/", img:"/images/Random ball.gif" },
   { title: "Pacman", desc:"Pacman moves & reverses on edges.", github:"https://github.com/KARTHICKRAJAMCA23/Pac-man", demo:"https://karthickrajamca23.github.io/Pac-man/", img:"/images/Pac-man.gif" },
@@ -64,16 +64,16 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20 bg-gray-900 text-white">
       <h2 className="text-4xl font-bold text-center text-emerald-400 mb-12">My Projects</h2>
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
+      <div className="max-w-6xl mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
         {projects.map((p, idx) => (
           <div key={idx} className="bg-glass-bg backdrop-blur-md rounded-3xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
-            <img src={p.img} alt={p.title} className="w-full h-64 object-cover" />
+            <img src={p.img} alt={p.title} className="w-full h-64 md:h-56 object-cover" />
             <div className="p-4">
               <h3 className="text-xl font-bold text-emerald-400 mb-2">{p.title}</h3>
               {p.duration && <p className="text-gray-300 text-sm mb-2"><strong>Duration:</strong> {p.duration}</p>}
               <p className="text-gray-300 mb-2">{p.desc}</p>
               {p.tech && <p className="text-gray-400 text-sm mb-3"><strong>Tech Stack:</strong> {p.tech}</p>}
-              <div className="flex gap-4">
+              <div className="flex gap-4 flex-wrap">
                 <a href={p.github} target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-emerald-400 text-gray-900 rounded-lg font-semibold hover:bg-emerald-500 transition">GitHub</a>
                 {p.demo && <a href={p.demo} target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-emerald-400 text-gray-900 rounded-lg font-semibold hover:bg-emerald-500 transition">Demo</a>}
               </div>

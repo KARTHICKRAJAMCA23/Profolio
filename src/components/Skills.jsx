@@ -9,7 +9,7 @@ const About = () => {
         <img src="/images/me.jpeg" alt="me" className="rounded-xl w-full md:w-1/3"/>
         <div className="md:w-2/3">
           <h2 className="text-4xl font-bold text-white mb-6">About Me</h2>
-          <p className="mb-6 text-lg">Hi guys, This is Karthick Raja J... Front End Developer.</p>
+          <p className="mb-6 text-lg">Hi guys, This is Karthick Raja J... Software Developer.</p>
           <div className="flex gap-4 mb-6">
             {["skills", "education", "webinar", "certification", "personal"].map(t => (
               <button key={t} className={`px-4 py-2 rounded ${tab===t ? "bg-pink-500 text-white" : "bg-gray-700"}`} onClick={()=>setTab(t)}>
