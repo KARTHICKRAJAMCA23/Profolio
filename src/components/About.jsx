@@ -29,7 +29,7 @@ const About = () => {
         <div className="flex-1">
           <div className="bg-glass-bg backdrop-blur-md rounded-3xl p-4 shadow-lg hover:scale-105 transition-transform duration-300">
             <img
-              src="/images/me.png"
+              src="/images/me.jpg"
               alt="Karthick Raja"
               className="rounded-2xl w-full md:h-auto object-cover"
             />
